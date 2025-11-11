@@ -1,0 +1,79 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VetCare Solutions</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <img src="logo.jpg" alt="VetCare Logo" class="logo">  
+    <h1>VetCare Solutions</h1>
+    <nav>
+      <ul>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="citas.html">Citas</a></li>
+        <li><a href="medicamentos.html">Medicamentos</a></li>
+        <li><a href="tratamientos.html">Tratamientos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Bienvenido a VetCare</h1>
+    <p>Tu aliado en la salud y bienestar de tus mascotas</p>
+    <a href="citas.html" class="btn">Agendar Cita</a>
+  </section>
+
+  <section class="carousel-container">
+    <div class="carousel">
+      <img src="ing1.jpg" alt="Servicio veterinario 1" class="active">
+      <img src="ing2.jpg" alt="Servicio veterinario 2">
+      <img src="ing3.jpg" alt="Servicio veterinario 3">
+    </div>
+    <div class="carousel-controls">
+      <button class="carousel-btn prev" onclick="prevSlide()">❮</button>
+      <button class="carousel-btn next" onclick="nextSlide()">❯</button>
+    </div>
+    <div class="carousel-dots">
+      <span class="dot active" onclick="goToSlide(0)"></span>
+      <span class="dot" onclick="goToSlide(1)"></span>
+      <span class="dot" onclick="goToSlide(2)"></span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Servicios Destacados</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Consultas Veterinarias</h3>
+        <p>Agenda una cita con nuestros profesionales para el diagnóstico y tratamiento de tu mascota.</p>
+      </div>
+      <div class="card">
+        <h3>Compra de Medicamentos</h3>
+        <p>Accede a un catálogo completo de medicamentos veterinarios y recíbelos en casa.</p>
+      </div>
+      <div class="card">
+        <h3>Información de Tratamientos</h3>
+        <p>Consulta tratamientos recomendados y consejos de salud adaptados a cada mascota.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔥 Nuevo apartado para ver citas -->
+  <section class="citas-registradas">
+    <h2>Gestión de Citas</h2>
+    <p>Consulta todas las citas agendadas en el sistema.</p>
+    <a href="ver_citas.php" class="btn">Ver Citas</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 VetCare Solutions. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
